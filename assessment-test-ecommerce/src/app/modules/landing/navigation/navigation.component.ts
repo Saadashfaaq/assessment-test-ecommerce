@@ -14,6 +14,7 @@ export class NavigationComponent {
   constructor(private router: Router) {}
 
   logout() {
+    localStorage?.setItem('user', null);
     this.router.navigate(['/login']);
   }
 }

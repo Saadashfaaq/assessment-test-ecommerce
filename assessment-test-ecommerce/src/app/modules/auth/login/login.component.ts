@@ -1,11 +1,6 @@
 import { Component } from '@angular/core';
 import { SharedModule } from '../../shared/shared.module';
-import {
-  FormControl,
-  UntypedFormBuilder,
-  UntypedFormGroup,
-  Validators,
-} from '@angular/forms';
+import { FormControl } from '@angular/forms';
 import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
 

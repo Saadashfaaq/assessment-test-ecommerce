@@ -47,6 +47,7 @@ export class CheckoutDialogComponent {
    */
   onCheckout(): void {
     // Implement checkout logic here if needed
+    localStorage?.setItem('cart', null);
     this.dialogRef.close(); // Closes the checkout dialog
   }
 
