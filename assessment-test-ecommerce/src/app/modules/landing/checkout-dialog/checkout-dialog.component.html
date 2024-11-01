@@ -1,24 +1,33 @@
 <h2 class="checkout-title">Checkout</h2>
 
 <form [formGroup]="checkoutForm" class="checkout-form">
-    <mat-form-field appearance="outline">
-        <mat-label>Address</mat-label>
-        <input matInput formControlName="address" />
-    </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Address</mat-label>
+    <input matInput formControlName="address" />
+  </mat-form-field>
 
-    <mat-form-field appearance="outline">
-        <mat-label>Payment Method</mat-label>
-        <mat-select formControlName="paymentMethod">
-            <mat-option *ngFor="let method of paymentMethods" [value]="method">{{ method }}</mat-option>
-        </mat-select>
-    </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Payment Method</mat-label>
+    <mat-select formControlName="paymentMethod">
+      <mat-option *ngFor="let method of paymentMethods" [value]="method">{{
+        method
+      }}</mat-option>
+    </mat-select>
+  </mat-form-field>
 
-    <div class="total-price">
-        <p>Total: ${{ data.total | number:'1.2-2' }}</p>
-    </div>
+  <div class="total-price">
+    <p>Total: ${{ data.total | number : "1.2-2" }}</p>
+  </div>
 
-    <div class="button-group">
-        <button mat-raised-button color="primary" (click)="onCheckout()" [disabled]="checkoutForm.invalid">Checkout!</button>
-        <button mat-raised-button color="warn" (click)="onCancel()">Cancel</button>
-    </div>
+  <div class="button-group">
+    <button
+      mat-raised-button
+      color="primary"
+      (click)="onCheckout()"
+      [disabled]="checkoutForm.invalid"
+    >
+      Checkout!
+    </button>
+    <button mat-raised-button color="warn" (click)="onCancel()">Cancel</button>
+  </div>
 </form>

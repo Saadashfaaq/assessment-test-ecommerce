@@ -6,20 +6,14 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-navigation',
   standalone: true,
-  imports: [
-    CommonModule,
-    SharedModule
-  ],
+  imports: [CommonModule, SharedModule],
   templateUrl: './navigation.component.html',
-  styleUrl: './navigation.component.scss'
+  styleUrl: './navigation.component.scss',
 })
 export class NavigationComponent {
+  constructor(private router: Router) {}
 
-  constructor(
-    private router: Router,
-  ){}
-
-  logout(){
-    this.router.navigate(['/login'])
+  logout() {
+    this.router.navigate(['/login']);
   }
 }
