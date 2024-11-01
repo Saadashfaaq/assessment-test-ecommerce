@@ -1,0 +1,76 @@
+.product-list-container {
+  padding: 20px;
+  background-color: #f5f5f5; // Warna latar belakang untuk seluruh halaman
+  display: flex;
+  flex-direction: column;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+    button {
+      margin-left: auto; // Memindahkan tombol cart ke kanan
+    }
+
+    .category-filter {
+      width: 300px; // Lebar dropdown kategori
+    }
+  }
+
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); // Grid responsif
+    gap: 20px; // Jarak antar produk
+
+    .product-card {
+      background-color: #fff; // Warna latar belakang card produk
+      border-radius: 8px; // Sudut melengkung
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Bayangan card
+      padding: 16px;
+      transition: transform 0.2s;
+
+      &:hover {
+        transform: translateY(-5px); // Efek hover untuk mengangkat card
+      }
+
+      .product-image {
+        width: 100%; // Mengatur lebar gambar menjadi 100% dari kontainer
+        height: 200px; // Menetapkan tinggi gambar tetap
+        object-fit: scale-down; // Memastikan gambar tidak terdistorsi dan tetap dalam proporsi
+        border-radius: 8px; // Menambahkan sudut melengkung
+      }
+
+      .product-info {
+        text-align: left; // Meratakan teks ke kiri
+      }
+
+      .product-title {
+        font-size: 1.2rem; // Ukuran font tetap
+        font-weight: bold; // Menebalkan teks judul
+        line-height: 1.5; // Tinggi baris yang konsisten
+        height: 50px; // Menetapkan tinggi tetap
+        overflow: hidden; // Menyembunyikan teks yang melampaui batas
+        text-overflow: ellipsis; // Menambahkan elipsis jika teks terlalu panjang
+        white-space: nowrap; // Mencegah teks untuk membungkus
+      }
+      
+      .product-description {
+        display: -webkit-box; // Membuat elemen menjadi fleksibel
+        -webkit-box-orient: vertical; // Mengatur orientasi kotak
+        -webkit-line-clamp: 3; // Membatasi jumlah baris yang ditampilkan
+        overflow: hidden; // Menyembunyikan teks yang melebihi batas
+        text-overflow: ellipsis; // Menampilkan '...' di akhir teks
+        line-height: 1.5; // Tinggi garis
+        max-height: 4.5em; // Maksimal tinggi untuk 3 baris (3 * 1.5em)
+        margin: 10px 0; // Margin untuk deskripsi
+      }
+
+      .product-price {
+        font-size: 1.125rem; // Ukuran font untuk harga
+        color: #4caf50; // Warna hijau untuk harga
+      }
+    }
+  }
+}

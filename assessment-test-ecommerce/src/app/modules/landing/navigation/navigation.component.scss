@@ -1,0 +1,27 @@
+.navbar {
+    display: flex; /* Menggunakan flexbox untuk tata letak */
+    justify-content: space-between; /* Menyebarkan elemen dengan spasi antara mereka */
+    align-items: center; /* Menyelaraskan elemen secara vertikal di tengah */
+    background-color: #1976d2; /* Warna primer */
+    padding: 10px 20px; /* Padding di atas/bawah dan kiri/kanan */
+    color: white; /* Mengatur warna teks menjadi putih */
+}
+
+.navbar-brand {
+    font-size: 20px; /* Ukuran font untuk nama aplikasi */
+    font-weight: bold; /* Menebalkan teks nama aplikasi */
+}
+
+.logout-button {
+    background-color: transparent; /* Latar belakang tombol transparan */
+    border: none; /* Tanpa border */
+    color: white; /* Warna teks tombol */
+    font-size: 16px; /* Ukuran font untuk tombol */
+    cursor: pointer; /* Mengubah kursor saat hover */
+    padding: 8px 16px; /* Padding di dalam tombol */
+    transition: background-color 0.3s; /* Transisi untuk efek hover */
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.1); /* Efek hover */
+    }
+}

@@ -1,0 +1,360 @@
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+  body {
+    position: relative;
+    background-color: #FFFF !important;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Catamaran-Regular', sans-serif; /* Gunakan font Catamaran secara default */
+  }
+
+.mat-mdc-text-field-wrapper:not(.mdc-text-field--outlined) .mat-mdc-form-field-infix {
+    padding-top: 0px;
+    /* padding-bottom: 8px; */
+}
+
+.mdc-text-field--filled:not(.mdc-text-field--disabled) {
+     background-color: white !important;
+}
+.mdc-text-field--filled:not(.mdc-text-field--disabled):hover {
+     background-color: white !important;
+}
+
+.mat-mdc-form-field-infix {
+    min-height: 20px !important;
+}
+
+.mdc-text-field--no-label:not(.mdc-text-field--outlined):not(.mdc-text-field--textarea) .mat-mdc-form-field-infix {
+     padding-top: 0px !important;
+     padding-bottom: 0px !important;
+}
+
+.mat-mdc-form-field.mat-form-field-appearance-fill .mat-mdc-text-field-wrapper .mat-mdc-form-field-flex {
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    border-radius: 6px;
+    padding: 0 16px;
+}
+
+.mat-mdc-form-field-flex {
+    display: inline-flex;
+    align-items: baseline;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.mat-mdc-text-field {
+    border-top-left-radius: var(--mdc-shape-small, 4px);
+    border-top-right-radius: var(--mdc-shape-small, 4px);
+    border-bottom-right-radius: var(--mdc-shape-small, 4px);;
+    border-bottom-left-radius: var(--mdc-shape-small, 4px);;
+    display: inline-flex;
+    align-items: baseline;
+    padding: 0px !important;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    will-change: opacity, transform, color;
+    box-sizing: border-box;
+}
+
+.mat-mdc-text-field-wrapper {
+    width: 100%;
+    height: 45px !important;
+}
+
+.textArea{
+    width: 100%;
+    height: 60px !important;
+}
+
+.mat-mdc-text-field-wrapper.mdc-text-field--outlined .mat-mdc-form-field-infix {
+    padding-top: 12px !important;
+    padding-bottom: 2px !important;
+}
+
+// Radio Button
+
+.mdc-button--raised {
+    transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 0 8px 0 8px;
+}
+
+.mat-mdc-raised-button.mat-accent {
+    --mdc-protected-button-container-color: #FFF138;
+    --mdc-protected-button-label-text-color: #fff;
+    --mat-protected-button-state-layer-color: #fff;
+    --mat-protected-button-ripple-color: rgba(255, 255, 255, 0.1);
+}
+
+.mat-mdc-raised-button.mat-primary {
+    --mdc-protected-button-container-color: #015BAB;
+    --mdc-protected-button-label-text-color: #fff;
+    --mat-protected-button-state-layer-color: #fff;
+    --mat-protected-button-ripple-color: rgba(255, 255, 255, 0.1);
+}
+
+.mdc-button .mdc-button__label {
+    font-size: 10px;
+}
+
+.mat-mdc-radio-button.mat-accent {
+    --mdc-radio-disabled-selected-icon-color: #000;
+    --mdc-radio-disabled-unselected-icon-color: #000;
+    --mdc-radio-unselected-hover-icon-color: #212121;
+    --mdc-radio-unselected-icon-color: rgba(0, 0, 0, 0.54);
+    --mdc-radio-unselected-pressed-icon-color: rgba(0, 0, 0, 0.54);
+    --mdc-radio-selected-focus-icon-color: #015BAB;
+    --mdc-radio-selected-hover-icon-color: #015BAB;
+    --mdc-radio-selected-icon-color: #015BAB;
+    --mdc-radio-selected-pressed-icon-color: #015BAB;
+    --mat-radio-ripple-color: #000;
+    --mat-radio-checked-ripple-color: #015BAB;
+    --mat-radio-disabled-label-color: rgba(0, 0, 0, 0.38);
+}
+
+.mat-mdc-form-field-error{
+    font-size: 12px;
+}
+
+.navbar.mat-mdc-menu-panel {
+    min-width: 112px;
+    max-width: 500px !important;
+    overflow: auto!important;
+    -webkit-overflow-scrolling: touch;
+    box-sizing: border-box;
+    outline: 0;
+    border-radius: var(--mat-menu-container-shape);
+    background-color: var(--mat-menu-container-color);
+    will-change: transform, opacity;
+  .mat-mdc-menu-content, .mat-mdc-menu-content .mat-mdc-menu-item .mat-mdc-menu-item-text {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    white-space: normal;
+    font-family: var(--mat-menu-item-label-text-font);
+    line-height: var(--mat-menu-item-label-text-line-height);
+    font-size: var(--mat-menu-item-label-text-size);
+    letter-spacing: var(--mat-menu-item-label-text-tracking);
+    font-weight: var(--mat-menu-item-label-text-weight);
+    width: 500px !important;
+    max-width: 500px !important;
+    padding-top: 0px !important;
+    max-height: 300px !important;
+    overflow-x: hidden;
+  }
+}
+
+.export-menu.mat-mdc-menu-panel {
+    min-width: 112px;
+    max-width: 500px !important;
+    overflow: auto!important;
+    -webkit-overflow-scrolling: touch;
+    box-sizing: border-box;
+    outline: 0;
+    border-radius: var(--mat-menu-container-shape);
+    background-color: var(--mat-menu-container-color);
+    will-change: transform, opacity;
+
+  .mat-mdc-menu-content, .mat-mdc-menu-content .mat-mdc-menu-item .mat-mdc-menu-item-text {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    white-space: normal;
+    font-family: var(--mat-menu-item-label-text-font);
+    line-height: var(--mat-menu-item-label-text-line-height);
+    font-size: var(--mat-menu-item-label-text-size);
+    letter-spacing: var(--mat-menu-item-label-text-tracking);
+    font-weight: var(--mat-menu-item-label-text-weight);
+    max-width: 500px !important;
+    padding-top: 0px !important;
+    max-height: 300px !important;
+    overflow-x: hidden;
+  }
+}
+
+
+
+
+// loading spinner that displayed inside of an element with dark background
+.inner-loading-indicator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999999999;
+  }
+  .inner-loading-indicator:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  // loading spinner that displayed inside of an element with transparent background
+  .inner-loading-indicator-transparent-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999999999;
+  }
+  .inner-loading-indicator-transparent-bg:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .ng-dropdown-panel .scroll-host {
+    overflow: hidden;
+    overflow-y: auto;
+    position: relative;
+    display: block;
+    min-width: fit-content !important;
+    width: 100% !important;
+    -webkit-overflow-scrolling: touch;
+  }
+
+
+// .mat-mdc-form-field.disabled {
+//     opacity: 0.6; /* Contoh: mengurangi opacity saat disable */
+//     pointer-events: none; /* Menonaktifkan interaksi pengguna saat disable */
+//   }
+
+//   /* Styling untuk input saat dalam keadaan disable */
+//   .mat-mdc-input-element:disabled {
+//     background-color: #f2f2f2; /* Contoh: warna latar belakang saat disable */
+//     color: #999; /* Contoh: warna teks saat disable */
+//   }
+
+//   .mat-form-field-disabled{
+//     background-color: #015BAB;
+//   }
+
+.mat-mdc-paginator {
+  display: block;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  color: var(--mat-paginator-container-text-color);
+  background-color: transparent !important;
+  font-family: var(--mat-paginator-container-text-font);
+  line-height: var(--mat-paginator-container-text-line-height);
+  font-size: var(--mat-paginator-container-text-size);
+  font-weight: var(--mat-paginator-container-text-weight);
+  letter-spacing: var(--mat-paginator-container-text-tracking);
+}
+
+.mdc-text-field--disabled {
+  background-color:rgba(0,0,0,0.0525);
+  pointer-events: none;
+}
+
+.mdc-text-field--outlined.mdc-text-field--disabled .mdc-text-field__input {
+  color: black !important;
+}
+
+.mat-step-icon {
+  border-radius: 50%;
+  height: 48px!important;
+  width: 48px!important;
+  flex-shrink: 0;
+  position: relative;
+  color: var(--mat-stepper-header-icon-foreground-color);
+  background-color: var(--mat-stepper-header-icon-background-color);
+}
+
+.mat-step-icon .mat-icon {
+  font-size: 32px!important;
+  height: 32px!important;
+  width: 32px!important;
+}
+
+
+.mat-step-label {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 50px;
+  vertical-align: middle;
+  font-family: var(--mat-stepper-header-label-text-font);
+  font-size: 17px!important;
+  font-weight: 600!important;
+  color: var(--mat-stepper-header-label-text-color);
+}
+
+.mat-step-label.mat-step-label-active {
+  color: var(--mat-stepper-header-selected-state-label-text-color);
+  font-weight: 600!important;
+}
+
+.mat-step-label.mat-step-label-selected {
+  font-size: var(--mat-stepper-header-selected-state-label-text-size);
+  font-weight: 600!important;
+}
+
+.mat-step-icon-state-waiting_for_approval {
+  background-color: transparent!important;
+  color: var(--mat-stepper-header-edit-state-icon-foreground-color);
+}
+
+.mat-step-icon-state-rejected {
+  background-color: transparent!important;
+  color: var(--mat-stepper-header-edit-state-icon-foreground-color);
+}
+
+.mat-step-icon-state-approved {
+  background-color: transparent!important;
+  color: var(--mat-stepper-header-edit-state-icon-foreground-color);
+}
+
+.mat-step-icon-state-revision {
+  background-color: transparent!important;
+  color: var(--mat-stepper-header-edit-state-icon-foreground-color);
+}
+
+.mat-step-icon-state-edit {
+  background-color: transparent!important;
+  color: var(--mat-stepper-header-edit-state-icon-foreground-color);
+}
+
+.mat-step-icon-state-cancelled {
+  background-color: transparent!important;
+  color: var(--mat-stepper-header-edit-state-icon-foreground-color);
+}
+
+.mat-sort-header-arrow {
+  height: 12px;
+  width: 12px;
+  min-width: 12px;
+  position: relative;
+  display: flex;
+  color: white!important;
+  opacity: 0;
+}
+
+.mat-sort-header-container {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  letter-spacing: normal;
+  outline: 0;
+  justify-content: center;
+}
